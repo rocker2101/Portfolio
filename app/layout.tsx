@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import SmoothScroll from '@/components/smooth-scroll';
 
 export const metadata: Metadata = {
   title: 'Roxelence — Digital Products Studio',
@@ -34,7 +35,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body id="top" className="bg-[#070807] text-white antialiased selection:bg-[#d4f455] selection:text-[#070807]">
-        {children}
+        <SmoothScroll>
+          {children}
+        </SmoothScroll>
       </body>
     </html>
   );
