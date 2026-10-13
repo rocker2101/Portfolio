@@ -108,11 +108,34 @@ export default function SelectedWork() {
   return (
     <section id="work" className="w-full bg-[#070807] py-20 px-6 sm:px-12 border-b border-white/[0.08]">
       <div className="max-w-[1440px] mx-auto">
-        {/* Top Bar: Badge + Navigation */}
-        <div className="flex items-center justify-between pb-8 border-b border-white/[0.08] mb-14">
+        {/* Top Bar: Badge + Project Name Tabs + Navigation */}
+        <div className="flex flex-wrap items-center justify-between gap-6 pb-8 border-b border-white/[0.08] mb-14">
           <div className="inline-flex items-center gap-2.5 font-mono text-xs font-semibold text-[#9fa29a] uppercase tracking-[0.14em]">
             <span className="w-2 h-2 rounded-full bg-[#d4f455] shadow-[0_0_10px_#d4f455]" />
             <span>FEATURED WORK</span>
+          </div>
+
+          {/* All Three Project Names in the Empty Space */}
+          <div className="flex items-center gap-3 flex-wrap">
+            {PROJECTS_DATA.map((proj, idx) => {
+              const isActive = idx === currentIndex;
+              return (
+                <button
+                  key={proj.id}
+                  onClick={() => setCurrentIndex(idx)}
+                  className={`inline-flex items-center gap-2 px-4 py-1.5 rounded-full font-sans text-sm transition-all duration-200 ${
+                    isActive
+                      ? 'bg-[#d4f455]/[0.12] border border-[#d4f455]/45 text-[#d4f455] font-bold shadow-[0_0_16px_rgba(212,244,85,0.15)]'
+                      : 'bg-white/[0.03] border border-white/[0.09] text-[#9fa29a] font-medium hover:text-white hover:border-white/25 hover:bg-white/[0.06]'
+                  }`}
+                >
+                  <span className={`font-mono text-xs ${isActive ? 'text-[#d4f455]' : 'opacity-65'}`}>
+                    0{idx + 1}
+                  </span>
+                  <span>{proj.title}</span>
+                </button>
+              );
+            })}
           </div>
 
           <div className="flex items-center gap-6">
