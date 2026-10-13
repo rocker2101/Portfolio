@@ -1,72 +1,58 @@
+'use client';
+
 import React from 'react';
-import { ArrowUpRight } from 'lucide-react';
-import { SERVICES } from '@/data/content';
+
+const SERVICES_DATA = [
+  {
+    idx: '01 / WEB DESIGN',
+    title: 'Websites & Digital Experiences',
+    desc: 'Clean, responsive marketing websites and digital flagships that communicate value with clarity and guide visitors to take action.',
+  },
+  {
+    idx: '02 / COMMERCE',
+    title: 'Ecommerce Architecture',
+    desc: 'Custom online stores built for high Average Order Value (AOV), rapid catalog filtering, and zero-friction checkout.',
+  },
+  {
+    idx: '03 / SOFTWARE',
+    title: 'Custom Web Applications & SaaS',
+    desc: 'Fast, accessible software products, founder MVPs, operational dashboards, and reliable API integrations.',
+  },
+  {
+    idx: '04 / OPTIMIZATION',
+    title: 'Performance & Motion Engineering',
+    desc: 'Core Web Vitals profiling, sub-second interaction speed, and hardware-accelerated momentum scrolling.',
+  },
+];
 
 export default function ServicesSection() {
   return (
-    <section id="services" className="py-24 md:py-32 px-6 max-w-6xl mx-auto border-b border-border-neutral">
-      {/* Header */}
-      <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
-        <div>
-          <span className="font-mono text-xs text-olive uppercase tracking-wider block mb-3">
-            02 // Services
-          </span>
-          <h2 className="font-serif text-4xl sm:text-5xl text-ink font-normal tracking-tight">
-            Capabilities centered on <br />
-            <span className="italic font-light text-ink-muted">business requirements.</span>
-          </h2>
-        </div>
-        <p className="text-ink-muted text-sm sm:text-base max-w-md leading-relaxed">
-          We help founders build new digital products or fix existing systems that have become slow, complicated, or difficult to maintain.
-        </p>
-      </div>
+    <section id="services" className="py-24 px-6 sm:px-14 max-w-[1560px] mx-auto border-b border-white/[0.08]">
+      <span className="font-mono text-xs font-semibold text-[#d4f455] uppercase tracking-widest block mb-4">
+        02 // SERVICES
+      </span>
+      <h2 className="text-4xl sm:text-6xl font-extrabold text-white tracking-tight uppercase mb-4">
+        WHAT WE BUILD
+      </h2>
+      <p className="text-base sm:text-lg text-[#9fa29a] max-w-2xl leading-relaxed mb-16">
+        We help founders and growing businesses design and build software that scales cleanly and converts reliably.
+      </p>
 
-      {/* Services List with Non-Repetitive Editorial Layout */}
-      <div className="divide-y divide-border-neutral border-y border-border-neutral">
-        {SERVICES.map((service) => (
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {SERVICES_DATA.map((srv, i) => (
           <div
-            key={service.id}
-            className="py-10 md:py-12 grid grid-cols-1 md:grid-cols-12 gap-8 items-start group hover:bg-[#ECEAE2]/40 transition-colors px-4 -mx-4 rounded-sm"
+            key={i}
+            className="bg-[#101211] border border-white/10 p-10 rounded hover:-translate-y-1.5 hover:border-[#d4f455]/40 transition-all duration-300"
           >
-            {/* Index & Title */}
-            <div className="md:col-span-5 flex items-start gap-4">
-              <span className="font-mono text-xs text-olive font-semibold pt-1">
-                {service.number}
-              </span>
-              <div>
-                <h3 className="font-serif text-2xl sm:text-3xl text-ink font-normal tracking-tight mb-2">
-                  {service.title}
-                </h3>
-                <a
-                  href="#contact"
-                  className="editorial-link font-mono text-xs uppercase text-ink-muted group-hover:text-ink mt-3"
-                >
-                  <span>Inquire about this</span>
-                  <ArrowUpRight className="w-3.5 h-3.5" />
-                </a>
-              </div>
-            </div>
-
-            {/* Description & Concrete Scope */}
-            <div className="md:col-span-7 space-y-4">
-              <p className="text-ink-muted text-base leading-relaxed">
-                {service.summary}
-              </p>
-
-              <div className="pt-2">
-                <span className="font-mono text-[11px] text-ink-faint uppercase tracking-wider block mb-2">
-                  What this includes:
-                </span>
-                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs font-mono text-ink">
-                  {service.scope.map((item) => (
-                    <li key={item} className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-olive/70 inline-block" />
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
+            <span className="font-mono text-xs text-[#d4f455] uppercase tracking-wider block mb-6">
+              {srv.idx}
+            </span>
+            <h3 className="text-xl font-bold text-white mb-3">
+              {srv.title}
+            </h3>
+            <p className="text-sm text-[#9fa29a] leading-relaxed">
+              {srv.desc}
+            </p>
           </div>
         ))}
       </div>

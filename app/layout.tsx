@@ -1,11 +1,10 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import SkipToContent from '@/components/skip-to-content';
 
 export const metadata: Metadata = {
-  title: 'Roxelence — Digital Design & Software Studio',
+  title: 'Roxelence — Digital Products Studio',
   description:
-    'Roxelence is an independent digital design and software development studio. We combine considered design with practical engineering to build websites, ecommerce storefronts, and custom software.',
+    'Roxelence helps startups and growing businesses design and develop websites, ecommerce experiences and custom software that are fast, reliable and built for the long run.',
   keywords: [
     'Digital Studio India',
     'Website Design & Engineering',
@@ -17,9 +16,9 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: 'Roxelence Studio' }],
   openGraph: {
-    title: 'Roxelence — Digital Design & Software Studio',
+    title: 'Roxelence — Digital Products Studio',
     description:
-      'We combine considered design with practical engineering to build websites, ecommerce storefronts, and custom software.',
+      'We build digital experiences that work. Fast, reliable websites, ecommerce flagships, and custom software.',
     url: 'https://roxelence.com',
     siteName: 'Roxelence',
     locale: 'en_US',
@@ -34,8 +33,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body id="top" className="bg-bg-warm text-ink antialiased selection:bg-ink selection:text-lime-accent">
-        <SkipToContent />
+      <body id="top" className="bg-[#070807] text-white antialiased selection:bg-[#d4f455] selection:text-[#070807]">
         {children}
       </body>
     </html>
