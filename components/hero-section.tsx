@@ -19,7 +19,7 @@ export default function HeroSection() {
           </h1>
 
           <p className="text-base sm:text-lg text-[#9fa29a] leading-relaxed max-w-xl mb-10">
-            Roxelence helps startups and growing businesses design and develop websites, ecommerce experiences and custom software that are fast, reliable and built for the long run.
+            Inveins helps startups and growing businesses design and develop websites, ecommerce experiences and custom software that are fast, reliable and built for the long run.
           </p>
 
           <div className="flex flex-wrap items-center gap-6">

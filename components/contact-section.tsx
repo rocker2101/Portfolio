@@ -32,8 +32,8 @@ export default function ContactSection() {
           <div className="space-y-3 font-mono text-xs text-[#60645c]">
             <p>
               EMAIL:{' '}
-              <a href="mailto:contact@roxelence.com" className="text-[#d4f455] font-semibold hover:underline">
-                contact@roxelence.com
+              <a href="mailto:contact@inveins.in" className="text-[#d4f455] font-semibold hover:underline">
+                contact@inveins.in
               </a>
             </p>
             <p>LOCATION: New Delhi, India // Global Delivery</p>

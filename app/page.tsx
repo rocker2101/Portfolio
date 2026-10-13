@@ -5,7 +5,7 @@ import TechStackSlider from '@/components/tech-stack-slider';
 import SelectedWork from '@/components/selected-work';
 import ServicesSection from '@/components/services-section';
 import ProcessSection from '@/components/process-section';
-import WhyRoxelence from '@/components/why-roxelence';
+import WhyInveins from '@/components/why-inveins';
 import ContactSection from '@/components/contact-section';
 import SiteFooter from '@/components/site-footer';
 
@@ -19,7 +19,7 @@ export default function Home() {
         <SelectedWork />
         <ServicesSection />
         <ProcessSection />
-        <WhyRoxelence />
+        <WhyInveins />
         <ContactSection />
       </main>
       <SiteFooter />

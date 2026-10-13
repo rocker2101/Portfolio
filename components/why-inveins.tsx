@@ -25,7 +25,7 @@ const PRINCIPLES_DATA = [
   },
 ];
 
-export default function WhyRoxelence() {
+export default function WhyInveins() {
   return (
     <section id="about" className="py-24 px-6 sm:px-14 max-w-[1560px] mx-auto border-b border-white/[0.08]">
       <span className="font-mono text-xs font-semibold text-[#d4f455] uppercase tracking-widest block mb-4">

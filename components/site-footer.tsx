@@ -23,7 +23,7 @@ export default function SiteFooter() {
   return (
     <footer className="py-16 px-6 sm:px-14 bg-[#050605] border-t border-white/[0.08] font-mono text-xs text-[#60645c] flex flex-wrap justify-between items-center gap-6">
       <div>
-        © {new Date().getFullYear()} ROXELENCE. DIGITAL PRODUCTS STUDIO.
+        © {new Date().getFullYear()} INVEINS. DIGITAL PRODUCTS STUDIO.
       </div>
       <div>
         FEATURED: INVEINS.IN / MPGISPORTS.IN

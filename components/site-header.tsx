@@ -10,7 +10,7 @@ export default function SiteHeader() {
     <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 sm:px-14 py-6 bg-[#070807]/90 backdrop-blur-xl border-b border-white/[0.06]">
       {/* Brand Wordmark */}
       <a href="#hero" className="font-sans text-lg sm:text-xl font-extrabold tracking-widest text-white uppercase">
-        ROXELENCE
+        INVEINS
       </a>
 
       {/* Desktop Navigation */}

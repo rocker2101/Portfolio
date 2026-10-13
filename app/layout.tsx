@@ -3,9 +3,9 @@ import './globals.css';
 import SmoothScroll from '@/components/smooth-scroll';
 
 export const metadata: Metadata = {
-  title: 'Roxelence — Digital Products Studio',
+  title: 'Inveins — Digital Products Studio',
   description:
-    'Roxelence helps startups and growing businesses design and develop websites, ecommerce experiences and custom software that are fast, reliable and built for the long run.',
+    'Inveins helps startups and growing businesses design and develop websites, ecommerce experiences and custom software that are fast, reliable and built for the long run.',
   keywords: [
     'Digital Studio India',
     'Website Design & Engineering',
@@ -13,15 +13,15 @@ export const metadata: Metadata = {
     'Custom Web Applications',
     'Next.js Studio',
     'UI/UX Design',
-    'Roxelence',
+    'Inveins',
   ],
-  authors: [{ name: 'Roxelence Studio' }],
+  authors: [{ name: 'Inveins Studio' }],
   openGraph: {
-    title: 'Roxelence — Digital Products Studio',
+    title: 'Inveins — Digital Products Studio',
     description:
       'We build digital experiences that work. Fast, reliable websites, ecommerce flagships, and custom software.',
-    url: 'https://roxelence.com',
-    siteName: 'Roxelence',
+    url: 'https://inveins.in',
+    siteName: 'Inveins',
     locale: 'en_US',
     type: 'website',
   },
